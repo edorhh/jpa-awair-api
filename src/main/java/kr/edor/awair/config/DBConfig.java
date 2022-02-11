@@ -33,7 +33,7 @@ public class DBConfig {
     @Bean(name = "entityManagerFactory")
     public LocalContainerEntityManagerFactoryBean factoryBean() {
         LocalContainerEntityManagerFactoryBean factoryBean = new LocalContainerEntityManagerFactoryBean();
-        factoryBean.setPackagesToScan("kr.edor.awair.domain");
+        factoryBean.setPackagesToScan("kr.edor.awair");
         factoryBean.setJpaVendorAdapter(vendorAdapter());
         factoryBean.setDataSource(dataSource());
         factoryBean.setJpaProperties(jpaProperties());
