@@ -22,7 +22,7 @@ public class AirDataController {
     public ResponseEntity getAirData() {
         /*
             select *
-              from air_data left outer join device
+              from device left outer join air_data
                 on air_data.device_id = device.id
              where air_data.id in (select max(id) from air_data group by device_id);
         */
